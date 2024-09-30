@@ -10,6 +10,8 @@ import sun from '/sun.png'
  const fahren=(e)=>{
   const value = parseFloat(e.target.value);
   setfahrenheit(value);
+  setcelsius('');
+  setkelvin('');
   if (!isNaN(value)) {
     const c = ((value - 32) * 5) / 9;
     setcelsius(c.toFixed(2));
@@ -17,11 +19,14 @@ import sun from '/sun.png'
     const k = ((value - 32) * 5) / 9 + 273.15;
     setkelvin(k.toFixed(2));
   }
+
  };
 
  const cels=(e)=>{
   const value = parseFloat(e.target.value);
   setcelsius(value);
+  setfahrenheit('');
+  setkelvin('');
   if (!isNaN(value)) {
     const f = (value * 9) / 5 + 32;
     setfahrenheit(f.toFixed(2));
@@ -29,11 +34,14 @@ import sun from '/sun.png'
     const k = value + 273.15;
     setkelvin(k.toFixed(2));
   }
+
  };
 
  const kel=(e)=>{
   const value = parseFloat(e.target.value);
   setkelvin(value);
+  setfahrenheit('');
+  setcelsius('');
   if (!isNaN(value)) {
     const f = (value - 273.15) * 9 / 5 + 32;
     setfahrenheit(f.toFixed(2));
@@ -41,6 +49,7 @@ import sun from '/sun.png'
     const c = value - 273.15;
     setcelsius(c.toFixed(2));
   }
+ 
  };
 
   return (
