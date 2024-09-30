@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+.container{
+    background-image: url(./tempbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 900px;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+  }
+  .container h1{
+    font-family: "Playfair Display", serif;
+    color: orangered;
+   text-align: center;
+   margin-top: -7px;
+  }
+  .converter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+    border-radius: 20px;
+    padding: 50px 20px;
+    margin-top: 116px;
+    margin-left: 107px;
+  }
+  .temp
+  { 
+      flex-basis: 32px;
+      text-align: center;
+  }
+  .temp label {
+    font-size: 17px;
+    font-weight: 530;
+    margin-bottom: 10px;
+    color: #890202;
+}
+
+.temp input {
+    width: 143px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center;
+}
+.cloud{
+  margin-top: 51px;
+  margin-left: 536px;
+}
+
+.sun{
+  width: 81px;
+  height: 82px;
+  margin-top: 51px;
+  margin-left: 908px;
+}
+
+@media (max-width:768px) {
+  .container{
+    width: 426px;
+    height: 1000px;
+    overflow: hidden;
+  }
+  
+}
